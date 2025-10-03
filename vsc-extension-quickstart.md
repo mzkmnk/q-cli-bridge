@@ -1,48 +1,48 @@
-# Welcome to your VS Code Extension
+# VS Code 拡張機能へようこそ
 
-## What's in the folder
+## フォルダの内容
 
-* This folder contains all of the files necessary for your extension.
-* `package.json` - this is the manifest file in which you declare your extension and command.
-  * The sample plugin registers a command and defines its title and command name. With this information VS Code can show the command in the command palette. It doesn’t yet need to load the plugin.
-* `src/extension.ts` - this is the main file where you will provide the implementation of your command.
-  * The file exports one function, `activate`, which is called the very first time your extension is activated (in this case by executing the command). Inside the `activate` function we call `registerCommand`.
-  * We pass the function containing the implementation of the command as the second parameter to `registerCommand`.
+* このフォルダには、拡張機能に必要なすべてのファイルが含まれています。
+* `package.json` - これは拡張機能とコマンドを宣言するマニフェストファイルです。
+  * サンプルプラグインはコマンドを登録し、そのタイトルとコマンド名を定義します。この情報により、VS Code はコマンドパレットにコマンドを表示できます。この時点ではプラグインをロードする必要はありません。
+* `src/extension.ts` - これはコマンドの実装を提供するメインファイルです。
+  * このファイルは `activate` 関数を1つエクスポートします。この関数は拡張機能が最初にアクティブ化されたときに呼び出されます（この場合はコマンドの実行時）。`activate` 関数内で `registerCommand` を呼び出します。
+  * コマンドの実装を含む関数を `registerCommand` の第2パラメータとして渡します。
 
-## Setup
+## セットアップ
 
-* install the recommended extensions (amodio.tsl-problem-matcher, ms-vscode.extension-test-runner, and dbaeumer.vscode-eslint)
-
-
-## Get up and running straight away
-
-* Press `F5` to open a new window with your extension loaded.
-* Run your command from the command palette by pressing (`Ctrl+Shift+P` or `Cmd+Shift+P` on Mac) and typing `Hello World`.
-* Set breakpoints in your code inside `src/extension.ts` to debug your extension.
-* Find output from your extension in the debug console.
-
-## Make changes
-
-* You can relaunch the extension from the debug toolbar after changing code in `src/extension.ts`.
-* You can also reload (`Ctrl+R` or `Cmd+R` on Mac) the VS Code window with your extension to load your changes.
+* 推奨される拡張機能（amodio.tsl-problem-matcher、ms-vscode.extension-test-runner、dbaeumer.vscode-eslint）をインストールしてください
 
 
-## Explore the API
+## すぐに始める
 
-* You can open the full set of our API when you open the file `node_modules/@types/vscode/index.d.ts`.
+* `F5` を押すと、拡張機能がロードされた新しいウィンドウが開きます。
+* コマンドパレット（`Ctrl+Shift+P` または Mac では `Cmd+Shift+P`）を開き、`Hello World` と入力してコマンドを実行します。
+* `src/extension.ts` 内のコードにブレークポイントを設定して、拡張機能をデバッグします。
+* デバッグコンソールで拡張機能の出力を確認できます。
 
-## Run tests
+## 変更を加える
 
-* Install the [Extension Test Runner](https://marketplace.visualstudio.com/items?itemName=ms-vscode.extension-test-runner)
-* Run the "watch" task via the **Tasks: Run Task** command. Make sure this is running, or tests might not be discovered.
-* Open the Testing view from the activity bar and click the Run Test" button, or use the hotkey `Ctrl/Cmd + ; A`
-* See the output of the test result in the Test Results view.
-* Make changes to `src/test/extension.test.ts` or create new test files inside the `test` folder.
-  * The provided test runner will only consider files matching the name pattern `**.test.ts`.
-  * You can create folders inside the `test` folder to structure your tests any way you want.
+* `src/extension.ts` のコードを変更した後、デバッグツールバーから拡張機能を再起動できます。
+* VS Code ウィンドウをリロード（`Ctrl+R` または Mac では `Cmd+R`）して、変更を読み込むこともできます。
 
-## Go further
 
-* Reduce the extension size and improve the startup time by [bundling your extension](https://code.visualstudio.com/api/working-with-extensions/bundling-extension).
-* [Publish your extension](https://code.visualstudio.com/api/working-with-extensions/publishing-extension) on the VS Code extension marketplace.
-* Automate builds by setting up [Continuous Integration](https://code.visualstudio.com/api/working-with-extensions/continuous-integration).
+## API を探索する
+
+* `node_modules/@types/vscode/index.d.ts` ファイルを開くと、完全な API セットを確認できます。
+
+## テストを実行する
+
+* [Extension Test Runner](https://marketplace.visualstudio.com/items?itemName=ms-vscode.extension-test-runner) をインストールします
+* **Tasks: Run Task** コマンドで "watch" タスクを実行します。これが実行されていることを確認してください。実行されていないと、テストが検出されない可能性があります。
+* アクティビティバーから Testing ビューを開き、Run Test ボタンをクリックするか、ホットキー `Ctrl/Cmd + ; A` を使用します
+* Test Results ビューでテスト結果の出力を確認します。
+* `src/test/extension.test.ts` に変更を加えるか、`test` フォルダ内に新しいテストファイルを作成します。
+  * 提供されているテストランナーは、名前パターン `**.test.ts` に一致するファイルのみを対象とします。
+  * `test` フォルダ内にフォルダを作成して、テストを任意の方法で構造化できます。
+
+## さらに進む
+
+* [拡張機能のバンドル](https://code.visualstudio.com/api/working-with-extensions/bundling-extension)により、拡張機能のサイズを削減し、起動時間を改善します。
+* VS Code 拡張機能マーケットプレイスに[拡張機能を公開](https://code.visualstudio.com/api/working-with-extensions/publishing-extension)します。
+* [継続的インテグレーション](https://code.visualstudio.com/api/working-with-extensions/continuous-integration)を設定してビルドを自動化します。
